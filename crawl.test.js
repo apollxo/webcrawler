@@ -77,7 +77,6 @@ test('getURLs both urls', () => {
 	const expected = ['https://blog.boot.dev/path1', 'https://blog.boot.dev/path2']
 	expect(actual).toEqual(expected)
 })
-
 // getting invalid urls
 test('getURLs both urls', () => {
 	const inputHTML = `
@@ -93,3 +92,19 @@ test('getURLs both urls', () => {
 	const expected = []
 	expect(actual).toEqual(expected)
 })
+
+// // getting invalid urls
+// test('getURLs both urls', () => {
+// 	const inputHTML = `
+// 	<html>
+// 		<head></head>
+// 		<body>
+// 			<a href='invalid'>Boot.dev</a>
+// 		</body>
+// 	</html>
+// `
+// 	const inputBaseURL = 'https://blog.boot.dev'
+// 	const actual = getURLs(inputHTML, inputBaseURL)
+// 	const expected = []
+// 	expect(actual).toEqual(expected)
+// })
