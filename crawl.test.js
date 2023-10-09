@@ -93,17 +93,3 @@ test('getURLs both urls', () => {
 	expect(actual).toEqual(expected)
 })
 
-// test('getURLs both urls', () => {
-// 	const inputHTML = `
-// 	<html>
-// 		<head></head>
-// 		<body>
-// 			<a href='invalid'>Boot.dev</a>
-// 		</body>
-// 	</html>
-// `
-// 	const inputBaseURL = 'https://blog.boot.dev'
-// 	const actual = getURLs(inputHTML, inputBaseURL)
-// 	const expected = []
-// 	expect(actual).toEqual(expected)
-// })
